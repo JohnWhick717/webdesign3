@@ -516,96 +516,183 @@ footer a:hover {
 @media (max-width:477px){
    #NavBar {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: fixed;
+    flex-direction: row;   /* en ligne */
+    align-items: center;
+    justify-content: space-between;
+    position: relative;    /* pas fixed */
     top: 0;
-    right: 0px;
-    height: 100vh;
-    width: 300px;
+    right: 0;
+    width: 100%;
+    height: auto;          /* plus besoin de 100vh */
     background-color: #fff;
-    box-shadow: 0 40px 60px rgba(0, 0,0, 0.06);
-    padding: 80px 0 0 10px;
-}
+    box-shadow: none;      /* tu peux enlever l’ombre */
+    padding: 0px 40px;    /* plus compact */
+   }
 
+  #NavBar li {
+    margin: 0 10x;        /* liens espacés horizontalement */
+  }
 
-#mobile {
-  display: flex;
-  align-items: center;
-}
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
 
-#NavBar li {
-  margin-bottom: 25px;
-}
-#mobile li {
-  color: #000;
-  font-size: 24px;
-  padding-left: 20px;
-
-}
+  #mobile li {
+    color: #ffffff;
+    font-size: 18px;
+    padding-left: 10px;
+  }
 
   #Header {
-    padding: 10px 30px;
+    padding: 10px 20px;
   }
 
   #section-p1 {
-  padding: 20px;
-}
-  .hero {
-    padding: 0 20px;
-    background-position: 55%;
+    padding: 20px;
+  }
 
+  .hero {
+    padding: 90%;
+    background-position: 100%;
   }
 
   h1 {
-    font-size: 38px;
+    font-size: 28px;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 22px;
   }
 
-  .fonction .fexbox{
-  width: 155px ;
-  padding: 0 0 15px 0;
-}
+  .fonction .fexbox {
+    width: 155px;
+    padding: 0 0 15px 0;
+  }
 
-.fonction {
-  justify-content: space-between;
-}
+  .fonction {
+    justify-content: space-between;
+  }
 
-.Product1 .pro {
-  width: 100%;
-}
+  .Product1 .pro {
+    width: 100%;
+  }
 
-#Banner {
-  height: 40vh;
-}
+  #Banner {
+    height: 40vh;
+  }
 
+  #sm-banner .banner-box {
+    height: 50vh;
+  }
 
-#sm-banner .banner-box {
-  height: 50vh;
-}
-
-#sm-banner .banner-box2 {
+  #sm-banner .banner-box2 {
     margin-top: 20px;
-}
-#banner3 {
-  padding: 20px 0;
+  }
+
+  #banner3 {
+    padding: 20px 0;
+  }
+
+  #banner3 .banner-box {
+    width: 100%;
+  }
+
+  .newsletter {
+    padding: 40px 20px;
+    text-align: center;  /* plus joli sur mobile */
+  }
+
+  .newsletter .form {
+    width: 100%;
+  }
 }
 
-#banner3 .banner-box {
-  width: 100%;
+/* Styles pour tablette type iPad Pro */
+@media (max-width: 1024px) and (min-width: 768px) {
+   #NavBar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      height: auto;
+      background-color: #fff;
+      padding: 15px 30px;
+   }
+
+   #NavBar li {
+      margin: 0 15px;
+      font-size: 18px;
+   }
+
+   #Header {
+      padding: 20px 40px;
+   }
+
+   #section-p1 {
+      padding: 30px;
+   }
+
+   .hero {
+  width: 100%;              /* prend toute la largeur */
+  height: 100vh;            /* prend toute la hauteur de l’écran */
+  display: flex;            /* pour centrer le contenu */
+  align-items: center;      /* vertical */
+  justify-content: center;  /* horizontal */
+  text-align: center;       /* texte centré */
+  background-size: cover;   /* image prend toute la zone */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.newsletter {
-padding: 40px 20px;
-}
 
-.newsletter .form {
-width: 100%;
-}
+   h1 {
+      font-size: 42px;
+   }
 
+   h2 {
+      font-size: 34px;
+   }
 
+   .fonction .fexbox {
+      width: 200px;
+      padding: 10px;
+   }
+
+   .fonction {
+      justify-content: space-around;
+      flex-wrap: wrap;
+   }
+
+   .Product1 .pro {
+      width: 45%;   /* 2 produits par ligne sur tablette */
+   }
+
+   #Banner {
+      height: 50vh;
+   }
+
+   #sm-banner .banner-box {
+      height: 60vh;
+   }
+
+   #banner3 {
+      padding: 30px 0;
+   }
+
+   #banner3 .banner-box {
+      width: 48%;  /* 2 bannières par ligne */
+   }
+
+   .newsletter {
+      padding: 50px 40px;
+      text-align: center;
+   }
+
+   .newsletter .form {
+      width: 70%;
+      margin: 0 auto;
+   }
 }
