@@ -521,7 +521,7 @@ footer a:hover {
     flex-direction: column;
     position: fixed;
     top: 0;
-    right: -300px;
+    right: -100px;
     width: 300px;
     background-color: #E3E6F3;
     box-shadow: 0 40px 60px rgba(0, 0,0, 0.1);

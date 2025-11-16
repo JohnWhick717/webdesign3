@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    font-weight: 600;
+    padding-top: 300px;
+    color: #fff2f2;
+
+}
+
+body {
+    background-color: rgb(57, 52, 52);
+}
